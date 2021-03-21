@@ -1,16 +1,17 @@
 //
 // Created by watso on 3/20/2021.
 //
-#include "AlgorithmStrategy.h"
-#include "SelectionSort.h"
-#include <iostream>
+#include "Sorter.h"
 
 using namespace std;
 
 int main(){
-
-    AlgorithmStrategy *selection=new SelectionSort();
-    selection->execute();
+    //create sorter object
+    Sorter sorter1=Sorter();
+    //generate random data sets
+    //sorter1.generateDataSets();
+    //launch sorting algorithms
+    sorter1.launch();
 
     return 0;
 }

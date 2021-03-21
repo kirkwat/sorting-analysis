@@ -5,9 +5,24 @@
 #ifndef INC_21S_PA02_SORTER_H
 #define INC_21S_PA02_SORTER_H
 
+#include "AlgorithmStrategy.h"
+#include "Selection.h"
+#include "Quick.h"
+#include "Merge.h"
+#include "Insertion.h"
+#include "Heap.h"
+
+using namespace std;
 
 class Sorter {
+private:
+    //TODO change to 6 to add sort of choice
+    AlgorithmStrategy* sortingAlgos [5];
 
+public:
+    Sorter();
+    void generateDataSets();
+    void launch();
 };
 
 
