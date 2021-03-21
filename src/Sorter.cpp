@@ -19,8 +19,8 @@ Sorter::Sorter() {
 void Sorter::generateDataSets(){
     //generate completely random
     int power=1;
-    dataSets[0] = new vector<int>[1];
-    for(int x=0;x<1;x++){
+    dataSets[0] = new vector<int>[4];
+    for(int x=0;x<4;x++){
         //skip 100
         if(x==1){
             power++;
@@ -30,8 +30,8 @@ void Sorter::generateDataSets(){
     }
     //generate 20% unique values
     power=1;
-    dataSets[1] = new vector<int>[1];
-    for(int x=0;x<1;x++){
+    dataSets[1] = new vector<int>[4];
+    for(int x=0;x<4;x++){
         //skip 100
         if(x==1){
             power++;
@@ -57,8 +57,23 @@ void Sorter::generateDataSets(){
     //TODO ADD OTHER VARIATIONS, reverse and semisort
 }
 void Sorter::launch(){
-    for(int types=0;types<1;types++){
-        sortingAlgos[types]->load(dataSets);
-        sortingAlgos[types]->execute();
+    for(int algoTypes=0;algoTypes<1;algoTypes++){
+        sortingAlgos[algoTypes]->load(dataSets);
+        sortingAlgos[algoTypes]->execute();
+        sortingAlgos[algoTypes]->stats();
+    }
+}
+void Sorter::display() {
+    //data set type
+    for(int x=0;x<2;x++){
+        //data set size
+        for(int y=0;y<1;y++){
+            cout<<"O: ";
+            //vector index
+            for(int z=0;z<dataSets[x][y].size();z++){
+                cout<<dataSets[x][y][z]<<" ";
+            }
+            cout<<endl;
+        }
     }
 }

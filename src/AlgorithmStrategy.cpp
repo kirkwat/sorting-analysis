@@ -4,6 +4,6 @@
 
 #include "AlgorithmStrategy.h"
 
-void AlgorithmStrategy::load(vector<int> **data){
-    dataBySize=data;
+void AlgorithmStrategy::load(vector<int> **d){
+    data=d;
 }

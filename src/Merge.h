@@ -12,8 +12,11 @@
 using namespace std;
 
 class Merge: public AlgorithmStrategy {
+private:
+    string results[2][1];
 public:
     void execute();
+    void stats();
 };
 
 

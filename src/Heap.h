@@ -11,8 +11,11 @@
 using namespace std;
 
 class Heap: public AlgorithmStrategy {
+private:
+    string results[2][1];
 public:
     void execute();
+    void stats();
 };
 
 

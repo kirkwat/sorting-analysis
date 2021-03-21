@@ -7,12 +7,21 @@
 
 #include "AlgorithmStrategy.h"
 #include <iostream>
+#include <string>
+#include <ctime>
+#include <ratio>
+#include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 
 class Selection: public AlgorithmStrategy {
+private:
+    string results[2][4];
 public:
     void execute();
+    void stats();
+    double sort(int*,int);
 };
 
 

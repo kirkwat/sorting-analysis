@@ -22,16 +22,13 @@ class Sorter {
 private:
     //TODO change to 6 to add sort of choice
     AlgorithmStrategy* sortingAlgos [5];
-
     vector<int> **dataSets;
-
-    //vector<int> dataSets [2][1];
-
 
 public:
     Sorter();
     void generateDataSets();
     void launch();
+    void display();
 };
 
 

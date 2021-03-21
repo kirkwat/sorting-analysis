@@ -1,7 +1,4 @@
-//
-// Created by watso on 3/21/2021.
-//
-
+//adopted from https://www.fluentcpp.com/2019/05/24/how-to-fill-a-cpp-collection-with-random-values/
 #ifndef INC_21S_PA02_RANDOMNUMBERBETWEEN_H
 #define INC_21S_PA02_RANDOMNUMBERBETWEEN_H
 

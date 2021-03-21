@@ -12,8 +12,11 @@
 using namespace std;
 
 class Quick: public AlgorithmStrategy {
+private:
+    string results[2][1];
 public:
     void execute();
+    void stats();
 };
 
 

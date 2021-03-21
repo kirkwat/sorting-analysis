@@ -12,10 +12,11 @@ using namespace std;
 
 class AlgorithmStrategy {
 protected:
-    vector<int> **dataBySize;
+    vector<int> **data;
 public:
     void load(vector<int>**);
     virtual void execute() = 0;
+    virtual void stats() = 0;
 };
 
 
