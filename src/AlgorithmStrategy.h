@@ -6,12 +6,15 @@
 #define INC_21S_PA02_ALGORITHMSTRATEGY_H
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 class AlgorithmStrategy {
+protected:
+    vector<int> **dataBySize;
 public:
-    void load();
+    void load(vector<int>**);
     virtual void execute() = 0;
 };
 

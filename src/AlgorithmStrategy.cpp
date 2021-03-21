@@ -3,3 +3,7 @@
 //
 
 #include "AlgorithmStrategy.h"
+
+void AlgorithmStrategy::load(vector<int> **data){
+    dataBySize=data;
+}

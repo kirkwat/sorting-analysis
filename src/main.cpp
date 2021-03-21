@@ -11,7 +11,7 @@ int main(){
     //generate random data sets
     sorter1.generateDataSets();
     //launch sorting algorithms
-    //sorter1.launch();
+    sorter1.launch();
 
     return 0;
 }

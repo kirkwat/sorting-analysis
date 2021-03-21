@@ -23,12 +23,10 @@ private:
     //TODO change to 6 to add sort of choice
     AlgorithmStrategy* sortingAlgos [5];
 
-    vector<int> dataSets [5][5];
+    vector<int> **dataSets;
 
-    vector<int> completeRandom [5];
-    vector<int> reverseSorted [5];
-    vector<int> fifthUnique [5];
-    vector<int> semiSorted [5];
+    //vector<int> dataSets [2][1];
+
 
 public:
     Sorter();
