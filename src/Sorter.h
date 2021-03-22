@@ -20,8 +20,9 @@ using namespace std;
 
 class Sorter {
 private:
-    //TODO change to 6 to add sort of choice
+    //abstract class holding 6 sorting algorithms
     AlgorithmStrategy* sortingAlgos [5];
+    //2d array holding vectors varying by sort-type and size
     vector<int> **dataSets;
 
 public:

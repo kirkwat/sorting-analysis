@@ -16,8 +16,6 @@ using namespace std;
 using namespace std::chrono;
 
 class Selection: public AlgorithmStrategy {
-private:
-    string results[2][4];
 public:
     void execute();
     void stats();

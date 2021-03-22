@@ -13,10 +13,11 @@ using namespace std;
 class AlgorithmStrategy {
 protected:
     vector<int> **data;
+    string results[4][5];
 public:
     void load(vector<int>**);
     virtual void execute() = 0;
-    virtual void stats() = 0;
+    virtual void stats();
 };
 
 

@@ -8,15 +8,20 @@
 
 #include "AlgorithmStrategy.h"
 #include <iostream>
+#include <string>
+#include <ctime>
+#include <ratio>
+#include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 
 class Merge: public AlgorithmStrategy {
-private:
-    string results[2][1];
 public:
     void execute();
     void stats();
+    void mergeSort1(int*, int, int,int);
+    void mergeSort2(int*, int, int, int,int);
 };
 
 

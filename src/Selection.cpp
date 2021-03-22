@@ -3,46 +3,38 @@
 //
 
 #include "Selection.h"
-
+//execute selection sort
 void Selection::execute() {
     //data set type
-    for(int i=0;i<2;i++){
+    for(int i=0;i<4;i++){
         //data set size
         for(int j=0;j<4;j++){
-            //copy array to sort
+            //get data set size
             int size=data[i][j].size();
+            //copy array to sort
             int array[size];
             for(int a=0;a<size;a++){
                 array[a]=data[i][j][a];
             }
             //sort algo and store stats
             if(size==10){
+                //format for smaller number
                 results[i][j]=to_string(size)+":\t\t "+to_string(sort(array,size))+"s";
             }
             else{
+                //format output
                 results[i][j]=to_string(size)+":\t "+to_string(sort(array,size))+"s";
             }
         }
     }
 }
-
+//display stats
 void Selection::stats() {
     cout<<"Selection Sort"<<endl;
-    //data set type
-    for(int i=0;i<2;i++) {
-        if(i==0){
-            cout<<"\tCompletely Random"<<endl;
-        }
-        else{
-            cout<<"\t20% Unique"<<endl;
-        }
-        //data set size
-        for (int j = 0; j < 4; j++) {
-            cout<<"\t\t"<<results[i][j]<<endl;
-        }
-    }
+    //call parent function
+    AlgorithmStrategy::stats();
 }
-
+//sorting algorithm
 double Selection::sort(int array[], int size){
     high_resolution_clock::time_point t1 = high_resolution_clock::now();
     int extreme;
