@@ -13,6 +13,10 @@ void Merge::execute() {
             for(int a=0;a<size;a++){
                 array[a]=data[i][j][a];
             }
+            //if size becomes too big for merge sort, hand off to merge sort
+            if(size>100000){
+                handoff(array,size);
+            }
             //sort and time algorithm
             high_resolution_clock::time_point t1 = high_resolution_clock::now();
             //sort
@@ -37,6 +41,12 @@ void Merge::stats() {
     cout << "Merge Sort" << endl;
     //call parent function
     AlgorithmStrategy::stats();
+}
+//hand off when data set gets too large
+//arguments - array, array size
+void Merge::handoff(int array[], int size) {
+    Heap h;
+    h.heapSort1(array,size);
 }
 //sorting algorithm
 //arguments - array, array size, left index, right index

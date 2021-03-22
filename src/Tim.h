@@ -4,6 +4,7 @@
 
 
 #include "AlgorithmStrategy.h"
+#include "Merge.h"
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -20,6 +21,7 @@ private:
 public:
     void execute();
     void stats();
+    void handoff(int*,int);
     void timSort1(int*, int);
     void timSort2(int*, int, int);
     void timSort3(int*, int, int, int);

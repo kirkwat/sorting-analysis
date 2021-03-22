@@ -3,6 +3,7 @@
 #define INC_21S_PA02_HEAP_H
 
 #include "AlgorithmStrategy.h"
+#include "Merge.h"
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -17,6 +18,7 @@ class Heap: public AlgorithmStrategy {
 public:
     void execute();
     void stats();
+    void handoff(int*,int);
     void heapSort1(int*, int);
     void heapSort2(int*, int, int);
 };

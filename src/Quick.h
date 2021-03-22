@@ -3,6 +3,7 @@
 #define INC_21S_PA02_QUICK_H
 
 #include "AlgorithmStrategy.h"
+#include "Merge.h"
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -17,6 +18,7 @@ class Quick: public AlgorithmStrategy {
 public:
     void execute();
     void stats();
+    void handoff(int*,int);
     void sort1(int*,int,int);
     int sort2(int*, int,int);
 };

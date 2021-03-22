@@ -13,6 +13,10 @@ void Tim::execute() {
             for(int a=0;a<size;a++){
                 array[a]=data[i][j][a];
             }
+            //if size becomes too big for tim sort, hand off to merge sort
+            if(size>100000){
+                handoff(array,size);
+            }
             //sort and time algorithm
             high_resolution_clock::time_point t1 = high_resolution_clock::now();
             //sort
@@ -37,6 +41,12 @@ void Tim::stats() {
     cout<<"Tim Sort"<<endl;
     //call parent function
     AlgorithmStrategy::stats();
+}
+//hand off when data set gets too large
+//arguments - array, array size
+void Tim::handoff(int array[], int size) {
+    Merge m;
+    m.mergeSort1(array,size,0,size-1);
 }
 //sorting algorithm
 //arguments - array, array size
