@@ -8,7 +8,7 @@ void Tim::execute() {
     //data set type
     for(int i=0;i<4;i++){
         //data set size
-        for(int j=0;j<3;j++){
+        for(int j=0;j<4;j++){
             //get data set size
             int size=data[i][j].size();
             //copy array to sort

@@ -82,7 +82,7 @@ void Sorter::generateDataSets(){
 //launch sorting algorithms
 void Sorter::launch(){
     //loop through all algorithms
-    for(int algoTypes=0;algoTypes<6;algoTypes++){
+    for(int algoTypes=1;algoTypes<6;algoTypes++){
         cout<<endl<<"Sorting..."<<endl;
         //load data sets to algorithm
         sortingAlgos[algoTypes]->load(dataSets);

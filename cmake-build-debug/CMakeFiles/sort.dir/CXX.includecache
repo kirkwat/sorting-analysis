@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/watso/Documents/GitHub/21s-pa02-kirkwat/src/AlgorithmStrategy.h
+iostream
+-
+vector
+-
+
+/mnt/c/Users/watso/Documents/GitHub/21s-pa02-kirkwat/src/Tim.cpp
+Tim.h
+/mnt/c/Users/watso/Documents/GitHub/21s-pa02-kirkwat/src/Tim.h
+
+/mnt/c/Users/watso/Documents/GitHub/21s-pa02-kirkwat/src/Tim.h
+AlgorithmStrategy.h
+/mnt/c/Users/watso/Documents/GitHub/21s-pa02-kirkwat/src/AlgorithmStrategy.h
+iostream
+-
+string
+-
+ctime
+-
+ratio
+-
+chrono
+-
+
