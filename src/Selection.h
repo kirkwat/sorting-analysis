@@ -1,11 +1,9 @@
-//
-// Created by watso on 3/21/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #ifndef INC_21S_PA02_SELECTION_H
 #define INC_21S_PA02_SELECTION_H
 
 #include "AlgorithmStrategy.h"
+#include "Merge.h"
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -15,10 +13,12 @@
 using namespace std;
 using namespace std::chrono;
 
+//This class implements Selection Sort.
 class Selection: public AlgorithmStrategy {
 public:
     void execute();
     void stats();
+    void handoff(int*,int);
     double sort(int*,int);
 };
 

@@ -21,6 +21,7 @@ CMakeFiles/sort.dir/src/Quick.cpp.o: ../src/Quick.cpp
 CMakeFiles/sort.dir/src/Quick.cpp.o: ../src/Quick.h
 
 CMakeFiles/sort.dir/src/Selection.cpp.o: ../src/AlgorithmStrategy.h
+CMakeFiles/sort.dir/src/Selection.cpp.o: ../src/Merge.h
 CMakeFiles/sort.dir/src/Selection.cpp.o: ../src/Selection.cpp
 CMakeFiles/sort.dir/src/Selection.cpp.o: ../src/Selection.h
 

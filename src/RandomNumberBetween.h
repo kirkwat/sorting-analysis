@@ -1,3 +1,4 @@
+//Kirk Watson - 47876885 - CS3353
 //adopted from https://www.fluentcpp.com/2019/05/24/how-to-fill-a-cpp-collection-with-random-values/
 #ifndef INC_21S_PA02_RANDOMNUMBERBETWEEN_H
 #define INC_21S_PA02_RANDOMNUMBERBETWEEN_H
@@ -14,6 +15,7 @@ namespace ranges{
     }
 }
 // C++11
+//This class generates a random number between a given range.
 class RandomNumberBetween{
 public:
     RandomNumberBetween(int low, int high) : random_engine_{std::random_device{}()}, distribution_{low, high}{}

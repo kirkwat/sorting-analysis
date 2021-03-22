@@ -1,7 +1,4 @@
-//
-// Created by watso on 3/21/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #ifndef INC_21S_PA02_QUICK_H
 #define INC_21S_PA02_QUICK_H
 
@@ -15,6 +12,7 @@
 using namespace std;
 using namespace std::chrono;
 
+//This class implements Quick Sort.
 class Quick: public AlgorithmStrategy {
 public:
     void execute();

@@ -1,9 +1,6 @@
-//
-// Created by watso on 3/20/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #include "AlgorithmStrategy.h"
-
+//load the data sets array
 void AlgorithmStrategy::load(vector<int> **d){
     data=d;
 }

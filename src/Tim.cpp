@@ -1,7 +1,4 @@
-//
-// Created by watso on 3/22/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #include "Tim.h"
 //execute tim sort
 void Tim::execute() {
@@ -42,6 +39,7 @@ void Tim::stats() {
     AlgorithmStrategy::stats();
 }
 //sorting algorithm
+//arguments - array, array size
 void Tim::timSort1(int array[], int size){
     //sort subarrays of size RUN
     for (int x = 0; x < size; x+=RUN){
@@ -62,6 +60,7 @@ void Tim::timSort1(int array[], int size){
     }
 }
 //insertion sort subarrays
+//arguments - array, array size, left index, right index
 void Tim::timSort2(int array[], int left, int right){
     for (int i = left + 1; i <= right; i++){
         int temp = array[i];
@@ -75,6 +74,7 @@ void Tim::timSort2(int array[], int left, int right){
 }
 
 //merge subarrays
+//arguments - array, array size, left index, middle index, right index
 void Tim::timSort3(int array[], int left, int mid, int right){
     //create two subarrays
     int len1 = mid - left + 1;

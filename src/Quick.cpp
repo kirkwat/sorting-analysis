@@ -1,7 +1,4 @@
-//
-// Created by watso on 3/21/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #include "Quick.h"
 //execute quick sort
 void Quick::execute() {
@@ -42,6 +39,7 @@ void Quick::stats() {
     AlgorithmStrategy::stats();
 }
 //sorting algorithm
+//arguments - array, array size, left index, right index
 void Quick::sort1(int array[], int left, int right){
     if (left < right){
         //partition
@@ -52,6 +50,7 @@ void Quick::sort1(int array[], int left, int right){
     }
 }
 //sorting algorithm
+//arguments - array, array size, left index, right index
 int Quick::sort2(int array[], int left, int right){
     int pivot = array[right];
     int x = (left - 1);

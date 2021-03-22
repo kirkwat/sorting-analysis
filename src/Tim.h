@@ -1,7 +1,4 @@
-//
-// Created by watso on 3/22/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #ifndef INC_21S_PA02_TIM_H
 #define INC_21S_PA02_TIM_H
 
@@ -16,6 +13,7 @@
 using namespace std;
 using namespace std::chrono;
 
+//This class implements Timsort.
 class Tim: public AlgorithmStrategy {
 private:
     const int RUN = 32;

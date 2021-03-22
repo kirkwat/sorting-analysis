@@ -1,7 +1,4 @@
-//
-// Created by watso on 3/21/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #ifndef INC_21S_PA02_SORTER_H
 #define INC_21S_PA02_SORTER_H
 
@@ -19,6 +16,8 @@
 
 using namespace std;
 
+//This class is the launcher of the program which controls the functionality
+//of the data set creation and sorting algorithms.
 class Sorter {
 private:
     //abstract class holding 6 sorting algorithms

@@ -1,6 +1,4 @@
-//
-// Created by watso on 3/20/2021.
-//
+//Kirk Watson - 47876885 - CS3353
 #include "Sorter.h"
 
 using namespace std;

@@ -1,7 +1,4 @@
-//
-// Created by watso on 3/21/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #include "Insertion.h"
 //execute insertion sort
 void Insertion::execute() {
@@ -42,6 +39,7 @@ void Insertion::stats() {
     AlgorithmStrategy::stats();
 }
 //sorting algorithm
+//arguments - array, array size
 void Insertion::insertionSort(int array[], int arrSize){
     for (int x = 1; x < arrSize; x++){
         int pivot = array[x];

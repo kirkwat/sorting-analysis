@@ -1,7 +1,4 @@
-//
-// Created by watso on 3/21/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #include "Selection.h"
 //execute selection sort
 void Selection::execute() {
@@ -15,6 +12,10 @@ void Selection::execute() {
             int array[size];
             for(int a=0;a<size;a++){
                 array[a]=data[i][j][a];
+            }
+            //if size becomes too big for selection sort, hand off to merge sort
+            if(size>100000){
+                handoff(array,size);
             }
             //sort algo and store stats
             if(size==10){
@@ -34,7 +35,14 @@ void Selection::stats() {
     //call parent function
     AlgorithmStrategy::stats();
 }
+//hand off when data set gets too large
+//arguments - array, array size
+void Selection::handoff(int array[], int size) {
+    Merge m;
+    m.mergeSort1(array,size,0,size-1);
+}
 //sorting algorithm
+//arguments - array, array size
 double Selection::sort(int array[], int size){
     high_resolution_clock::time_point t1 = high_resolution_clock::now();
     int extreme;

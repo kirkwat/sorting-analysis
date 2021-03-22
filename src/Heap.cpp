@@ -1,7 +1,4 @@
-//
-// Created by watso on 3/21/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #include "Heap.h"
 //execute heap sort
 void Heap::execute() {
@@ -42,6 +39,7 @@ void Heap::stats() {
     AlgorithmStrategy::stats();
 }
 //sorting algorithm
+//arguments - array, array size
 void Heap::heapSort1(int array[], int size){
     //rearrange array
     for (int index = size / 2 - 1; index >= 0; index--){
@@ -58,6 +56,7 @@ void Heap::heapSort1(int array[], int size){
     }
 }
 //build heap from index node
+//arguments - array, array size, index
 void Heap::heapSort2(int array[], int size, int index){
     int greatest = index; //greatest is root node
     int left = 2 * index + 1;

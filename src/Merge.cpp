@@ -1,7 +1,4 @@
-//
-// Created by watso on 3/21/2021.
-//
-
+//Kirk Watson - 47876885 - CS3353
 #include "Merge.h"
 //execute merge sort
 void Merge::execute() {
@@ -42,6 +39,7 @@ void Merge::stats() {
     AlgorithmStrategy::stats();
 }
 //sorting algorithm
+//arguments - array, array size, left index, right index
 void Merge::mergeSort1(int array[], int arrSize, int left, int right){
     if (left < right){
         //middle index
@@ -54,6 +52,7 @@ void Merge::mergeSort1(int array[], int arrSize, int left, int right){
     }
 }
 //sorting algorithm
+//arguments - array, array size, left index, middle index, right index
 void Merge::mergeSort2(int array[], int arrSize, int left, int middle, int right){
     int subArr1Size = middle - left + 1;
     int subArr2Size = right - middle;
