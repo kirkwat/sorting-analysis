@@ -15,6 +15,7 @@ Once the data sets are generated, the program will run all data sets through eac
 ## How to Use
 This program does not take any arguments or input files.
 Simply compile and run to generate data sets and have them sorted!
+Sorting Performance will be displayed to the terminal.
 
 ## Analysis
 ![image info](./artifacts/table.PNG)
