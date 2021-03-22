@@ -53,6 +53,7 @@ It is worth noting that Selection Sort has a reduced run time.
 
 The last data set contains elements that are already 70% sorted.
 Similar to the reversed order data set, we see that Quick Sort has a slower run time with a trend alike that of Selection Sort and Insertion Sort.
+In this data set, Insertion has it's best performance being twice as fast as the first data set.
 
 ### Conclusion
 From the data gathered, we are able to track the worst and average time complexities of these sorting algorithms.
