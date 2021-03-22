@@ -14,6 +14,7 @@
 #include "Merge.h"
 #include "Insertion.h"
 #include "Heap.h"
+#include "Tim.h"
 #include "RandomNumberBetween.h"
 
 using namespace std;
@@ -21,7 +22,7 @@ using namespace std;
 class Sorter {
 private:
     //abstract class holding 6 sorting algorithms
-    AlgorithmStrategy* sortingAlgos [5];
+    AlgorithmStrategy* sortingAlgos [6];
     //2d array holding vectors varying by sort-type and size
     vector<int> **dataSets;
 
@@ -29,7 +30,6 @@ public:
     Sorter();
     void generateDataSets();
     void launch();
-    void display();
 };
 
 

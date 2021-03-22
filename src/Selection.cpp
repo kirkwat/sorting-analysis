@@ -55,13 +55,6 @@ double Selection::sort(int array[], int size){
     }
     high_resolution_clock::time_point t2 = high_resolution_clock::now();
     duration<double> time_span = duration_cast<duration<double>>(t2 - t1);
-
-    /*
-    cout<<"S: ";
-    for(int a=0;a<size;a++){
-        cout<<array[a]<<" ";
-    }
-    cout<<endl;*/
-
+    //return sorting time
     return time_span.count();
 }

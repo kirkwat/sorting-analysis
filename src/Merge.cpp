@@ -3,7 +3,7 @@
 //
 
 #include "Merge.h"
-//execute selection sort
+//execute merge sort
 void Merge::execute() {
     //data set type
     for(int i=0;i<4;i++){
@@ -23,12 +23,6 @@ void Merge::execute() {
             //get time
             high_resolution_clock::time_point t2 = high_resolution_clock::now();
             duration<double> time_span = duration_cast<duration<double>>(t2 - t1);
-
-            cout<<"S: ";
-            for(int a=0;a<size;a++){
-                cout<<array[a]<<" ";
-            }
-            cout<<endl;
             //store stats
             if(size==10){
                 //format for smaller number

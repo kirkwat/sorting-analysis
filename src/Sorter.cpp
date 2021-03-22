@@ -6,13 +6,15 @@
 //default constructor
 Sorter::Sorter() {
     //create interface for sorting algos
+    //credit to geeksforgeeks.com for references
     sortingAlgos[0]=new Selection;
     sortingAlgos[1]=new Quick;
     sortingAlgos[2]=new Merge;
     sortingAlgos[3]=new Insertion;
     sortingAlgos[4]=new Heap;
+    sortingAlgos[5]=new Tim;
     //create array holding data sets
-    dataSets=new vector<int> *[2];
+    dataSets=new vector<int> *[4];
 }
 //generate data sets of different sizes and characteristics
 //sizes are 10, 1000, 10000, 100000, 1000000
@@ -80,7 +82,7 @@ void Sorter::generateDataSets(){
 //launch sorting algorithms
 void Sorter::launch(){
     //loop through all algorithms
-    for(int algoTypes=0;algoTypes<3;algoTypes++){
+    for(int algoTypes=0;algoTypes<6;algoTypes++){
         cout<<endl<<"Sorting..."<<endl;
         //load data sets to algorithm
         sortingAlgos[algoTypes]->load(dataSets);
@@ -89,20 +91,5 @@ void Sorter::launch(){
         cout<<"...Complete"<<endl<<endl;
         //display stats
         sortingAlgos[algoTypes]->stats();
-    }
-}
-//TODO delete
-void Sorter::display() {
-    //data set type
-    for(int x=0;x<3;x++){
-        //data set size
-        for(int y=0;y<1;y++){
-            cout<<"O: ";
-            //vector index
-            for(int z=0;z<dataSets[x][y].size();z++){
-                cout<<dataSets[x][y][z]<<" ";
-            }
-            cout<<endl;
-        }
     }
 }

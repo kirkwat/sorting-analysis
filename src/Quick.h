@@ -5,7 +5,6 @@
 #ifndef INC_21S_PA02_QUICK_H
 #define INC_21S_PA02_QUICK_H
 
-
 #include "AlgorithmStrategy.h"
 #include <iostream>
 #include <string>
