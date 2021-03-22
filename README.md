@@ -1,4 +1,4 @@
-# CS 3353 Programming Project 1
+# CS 3353 Programming Project 2
 This repository was created and maintained by Kirk Watson.
 
 Student ID: 47876885
