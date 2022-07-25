@@ -14,7 +14,6 @@ namespace ranges{
         return std::generate(begin(range), end(range), generator);
     }
 }
-// C++11
 //This class generates a random number between a given range.
 class RandomNumberBetween{
 public:
@@ -25,14 +24,6 @@ public:
 private:
     std::mt19937 random_engine_;
     std::uniform_int_distribution<int> distribution_;
-};
-//C++14
-auto randomNumberBetween = [](int low, int high){
-    auto randomFunc = [distribution_ = std::uniform_int_distribution<int>(low, high),
-            random_engine_ = std::mt19937{ std::random_device{}() }]() mutable{
-        return distribution_(random_engine_);
-    };
-    return randomFunc;
 };
 
 #endif //INC_21S_PA02_RANDOMNUMBERBETWEEN_H
