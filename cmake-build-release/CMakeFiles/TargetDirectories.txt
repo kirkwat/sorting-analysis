@@ -1,3 +1,0 @@
-/mnt/c/Users/watso/Documents/GitHub/21s-pa02-kirkwat/cmake-build-release/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/watso/Documents/GitHub/21s-pa02-kirkwat/cmake-build-release/CMakeFiles/edit_cache.dir
-/mnt/c/Users/watso/Documents/GitHub/21s-pa02-kirkwat/cmake-build-release/CMakeFiles/sort.dir
